@@ -14,7 +14,7 @@ public class Customer {
     String generatedId = "";
 
     do {
-      generatedId = String.format("%03d", (int)Math.floor(Math.random() * 301));
+      generatedId = "CU" + String.format("%03d", (int)Math.floor(Math.random() * 301));
     } while ( isIdExists(generatedId) ); // ngulang terus kalo misal udah ada di list existingId
     // kalo gaada berenti
 
